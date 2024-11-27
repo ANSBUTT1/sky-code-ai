@@ -35,33 +35,37 @@ const Header = () => {
             <li>
               <a
                 href="#services"
-                className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Services
+                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </a>
             </li>
             <li>
               <a
                 href="#solutions"
-                className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Solutions
+                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </a>
             </li>
             <li>
               <a
                 href="#about"
-                className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
-                About Us
+                About
+                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Contact
+                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </a>
             </li>
           </ul>
@@ -112,7 +116,8 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#contact" className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+              href="#contact"
+              className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
               onClick={() => {
                 setIsMenuOpen(false); // Close menu on item click
               }}
