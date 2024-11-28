@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import Logo from "../assets/Logo.png";
 import { HiMenu, HiX } from "react-icons/hi"; // Import icons for the menu toggle
 
@@ -33,40 +34,58 @@ const Header = () => {
         <nav className={`hidden md:block`}>
           <ul className="flex space-x-6">
             <li>
-              <a
-                href="#services"
+              <Link
+                to="/"
+                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
+              >
+                Home
+                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
                 className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Services
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#solutions"
+              <Link
+                to="/solutions"
                 className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Solutions
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 About
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Contact
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/search"
+                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
+              >
+                Search
+                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -82,48 +101,70 @@ const Header = () => {
         </button>
         <ul className="space-y-2">
           <li>
-            <a
-              href="#services"
+            <Link
+              to="/"
+              className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+              onClick={() => {
+                setIsMenuOpen(false); // Close menu on item click
+              }}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/services"
               className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
               onClick={() => {
                 setIsMenuOpen(false); // Close menu on item click
               }}
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#solutions"
+            <Link
+              to="/solutions"
               className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
               onClick={() => {
                 setIsMenuOpen(false); // Close menu on item click
               }}
             >
               Solutions
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
               onClick={() => {
                 setIsMenuOpen(false); // Close menu on item click
               }}
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
               onClick={() => {
                 setIsMenuOpen(false); // Close menu on item click
               }}
             >
               Contact
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/search"
+              className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
+              onClick={() => {
+                setIsMenuOpen(false); // Close menu on item click
+              }}
+            >
+              Search
+            </Link>
           </li>
         </ul>
       </aside>
