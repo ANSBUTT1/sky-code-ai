@@ -78,15 +78,6 @@ const Header = () => {
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </Link>
             </li>
-            <li>
-              <Link
-                to="/search"
-                className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
-              >
-                Search
-                <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
@@ -153,17 +144,6 @@ const Header = () => {
               }}
             >
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/search"
-              className="text-[#f5f5f5] hover:text-[#a64d79] transition duration-300"
-              onClick={() => {
-                setIsMenuOpen(false); // Close menu on item click
-              }}
-            >
-              Search
             </Link>
           </li>
         </ul>

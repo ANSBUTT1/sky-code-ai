@@ -20,17 +20,17 @@ const Hero = () => {
             Unlock your business's potential with AI-powered cloud solutions for
             seamless integration, enhanced productivity, and unmatched growth.
           </p>
-          <div className="flex">
+          <div className="flex gap-6">
             <button
               onClick={() => (window.location.href = "#contact")} // Redirect to contact section
-              className="bg-[#6a1e55] text-[#f5f5f5] px-6 py-3 rounded-lg shadow-lg hover:shadow-glow transition-transform transform hover:scale-105 relative overflow-hidden"
+              className="bg-[#6a1e55] shadow-glow text-[#f5f5f5] px-8 py-4 rounded-xl   hover:bg-[#9f5c7b] transition-all transform hover:scale-105 relative overflow-hidden"
             >
               <span className="absolute inset-0 bg-[#6a1e55] opacity-30 rounded-lg blur-md"></span>
               Write to Us
             </button>
             <button
               onClick={() => (window.location.href = "#contact")} // Redirect to contact section
-              className="bg-[# 7a2e65] text-[#f5f5f5] px-6 py-3 rounded-lg shadow-lg hover:shadow-glow transition-transform transform hover:scale-105 relative overflow-hidden ml-4"
+              className="bg-[#7a2e65] shadow-glow text-[#f5f5f5] px-8 py-4 rounded-xl   hover:bg-[#9f5c7b] transition-all transform hover:scale-105 relative overflow-hidden"
             >
               <span className="absolute inset-0 bg-[#7a2e65] opacity-30 rounded-lg blur-md"></span>
               Talk to Us
