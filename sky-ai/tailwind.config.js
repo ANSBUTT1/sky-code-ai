@@ -14,9 +14,15 @@ module.exports = {
           "inset 0 0 10px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.3)",
       },
       animation: {
+        'bounce-once': 'bounce 4s ',
+        fadeIn: 'fadeIn 1s ease-in forwards',
         "text-pulse": "textPulse 1.5s ease-in-out infinite",
       },
       keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
         textPulse: {
           "0%, 100%": { opacity: "1", transform: "scale(1)" },
           "50%": { opacity: "0.5", transform: "scale(1.05)" },

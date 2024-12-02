@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import { HiMenu, HiX } from "react-icons/hi"; // Import icons for the menu toggle
 
@@ -42,7 +42,9 @@ const Header = () => {
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </Link>
             </li>
-            <li>
+
+            {/* Services Dropdown */}
+            <li className="relative group">
               <Link
                 to="/services"
                 className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
@@ -50,7 +52,29 @@ const Header = () => {
                 Services
                 <span className="w-0 group-hover:w-12 h-[2px] bg-white transition-all duration-300 ease-in-out"></span>
               </Link>
+              {/* Submenu for Services */}
+              <div className="absolute left-0 hidden group-hover:block bg-[#333] text-white w-48 py-2 rounded-md shadow-lg">
+                <Link
+                  to="/service1"
+                  className="block px-4 py-2 hover:bg-[#a64d79] transition duration-300"
+                >
+                  Service 1
+                </Link>
+                <Link
+                  to="/service2"
+                  className="block px-4 py-2 hover:bg-[#a64d79] transition duration-300"
+                >
+                  Service 2
+                </Link>
+                <Link
+                  to="/service3"
+                  className="block px-4 py-2 hover:bg-[#a64d79] transition duration-300"
+                >
+                  Service 3
+                </Link>
+              </div>
             </li>
+
             <li>
               <Link
                 to="/solutions"
@@ -81,6 +105,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+
       {/* Aside Bar */}
       <aside
         className={`fixed top-0 right-0 h-screen w-64 bg-[#444] p-4 transition-transform duration-300 ${
