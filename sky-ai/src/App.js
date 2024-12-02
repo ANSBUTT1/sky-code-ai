@@ -2,8 +2,9 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Updated import
-import SearchPortal from './components/SearchPortal'; // Import the SearchPortal component
-import HomePage from './components/HomePage'; // Import the HomePage component
+// import SearchPortal from './components/SearchPortal'; // Import the SearchPortal component
+import HomePage from '../src/pages/HomePage'; // Import the HomePage component
+import ServicesPage from './pages/ServicesPage';
 
 const App = () => {
     return (
@@ -11,7 +12,7 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} /> {/* Route for HomePage */}
-                <Route path="/search" element={<SearchPortal />} /> {/* Route for SearchPortal */}
+                <Route path="/services" element={<ServicesPage />} /> {/* Route for SearchPortal */}
             </Routes>
             <Footer />
         </Router>
