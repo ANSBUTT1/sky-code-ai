@@ -3,7 +3,7 @@ import image from "../assets/hero.png";
 
 const ServicesHero = () => {
   return (
-    <section className="bg-gradient-to-r from-primary via-light3 to-light2 text-dark1 py-16">
+    <section className=" shadow-secondaryColor shadow-glow bg-gradient-to-r from-primary via-light3 to-light2 text-dark1 py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative">
         {/* Text Content */}
         <div className="text-center md:text-left opacity-0 transform transition-all duration-1000 animate-fadeIn">
@@ -36,7 +36,7 @@ const ServicesHero = () => {
           <img
             src={image}
             alt="IT Services Illustration"
-            className=" w-full max-w-lg rounded-lg shadow-xl transform transition duration-500 hover:scale-105"
+            className=" w-full max-w-lg shadow-glow  shadow-primaryColor rounded-lg  transform transition duration-500 hover:scale-105"
           />
         </div>
       </div>
