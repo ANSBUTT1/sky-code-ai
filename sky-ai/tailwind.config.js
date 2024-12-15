@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: { serif: ["Georgia", "Cambria", "Times New Roman", "Times", "serif"], },
     extend: {
       colors: {
         primaryColor: "#a64d79",

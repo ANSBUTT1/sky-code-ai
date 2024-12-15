@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from 'react-router-dom'; // Updated import
 const Services = () => {
   const [flipped, setFlipped] = useState([false, false, false]);
 
@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <section className="bg-gradient-to-r from-primary to-secondary text-white py-20">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-white text-4xl md:text-5xl font-extrabold text-center mb-12">
+        <h2 className="text-white font-serif text-4xl md:text-5xl font-extrabold text-center mb-12">
           Our Services
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -150,6 +150,13 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center mt-10">
+        <Link to='/services'>
+        <button className="shadow-glow bg-primaryColor py-2 px-8 font-serif font-semibold  hover:bg-primaryColor/90 rounded-md">
+           Explore More
+        </button>
+        </Link>
       </div>
     </section>
   );

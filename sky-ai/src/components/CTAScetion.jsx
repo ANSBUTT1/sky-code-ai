@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 const CTASection = () => {
   return (
@@ -17,6 +18,7 @@ const CTASection = () => {
         </p>
 
         {/* Call to Action Button */}
+        <Link to='/contact'>
         <button
               onClick={() => (window.location.href = "#contact")} // Redirect to contact section
               className="bg-[#6a1e55] font-semibold shadow-glow text-[#f5f5f5] px-8 py-4 rounded-xl   hover:bg-[#9f5c7b] transition-all transform hover:scale-105 relative overflow-hidden"
@@ -24,6 +26,8 @@ const CTASection = () => {
               <span className="absolute inset-0 bg-[#6a1e55] opacity-30 rounded-lg blur-md"></span>
               Get in Touch
             </button>
+
+            </Link>
       </div>
     </section>
   )
