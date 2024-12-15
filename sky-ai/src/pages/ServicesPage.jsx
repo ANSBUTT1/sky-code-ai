@@ -7,7 +7,7 @@ const ServicesPage = () => {
   return (
     <div>
       <ServicesHero/>
-      <Services/>
+      {/* <Services/> */}
       <Management/>
     </div>
   )
