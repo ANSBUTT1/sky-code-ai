@@ -3,8 +3,8 @@ import image from "../assets/hero-section.png";
 
 const Hero = () => {
   return (
-    <section className=" bg-gradient-to-l from-[#a64d79] to-[#1a1a1d] flex items-center justify-center text-center relative overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center absolute inset-0 bg-gradient-to-l from-[#a64d79] to-[#3b1c32] opacity-50 blur-lg"></div>
+    <section className="xl:px-12 bg-gradient-to-l from-[#a64d79] to-[#1a1a1d] flex items-center justify-center text-center relative overflow-hidden">
+      <div className="  grid grid-cols-1 md:grid-cols-2 items-center justify-center absolute inset-0 bg-gradient-to-l from-[#a64d79] to-[#3b1c32] opacity-50 blur-lg"></div>
       <div className=" p-8 sm:p-16 relative z-10  grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="  text-content text-left md:text-left flex flex-col gap-4 lg:gap-8">
           <h2 className="text-4xl md:text-4xl lg:text-5xl text-[#f5f5f5] mb-4">

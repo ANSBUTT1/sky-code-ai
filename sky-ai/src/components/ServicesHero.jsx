@@ -2,9 +2,9 @@ import React from "react";
 import image from "../assets/hero.png";
 
 const ServicesHero = () => {
-  return (
-    <section className=" shadow-secondaryColor shadow-glow bg-gradient-to-r from-primary via-light3 to-light2 text-dark1 py-16">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative">
+  return ( 
+    <section className=" shadow-secondaryColor shadow-glow  py-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 xl:px-0 grid grid-cols-1 md:grid-cols-2 gap-16 xl:gap-x-72 items-center relative">
         {/* Text Content */}
         <div className="text-center md:text-left opacity-0 transform transition-all duration-1000 animate-fadeIn">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight tracking-wide">
