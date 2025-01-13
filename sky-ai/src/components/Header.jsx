@@ -54,7 +54,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/solutions"
+                to="/soltions"
                 className="group text-[#f5f5f5] hover:text-xl flex flex-col items-center hover:text-[#a64d79] transition-all duration-300"
               >
                 Solutions

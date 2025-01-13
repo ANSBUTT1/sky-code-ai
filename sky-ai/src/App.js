@@ -7,6 +7,7 @@ import HomePage from '../src/pages/HomePage'; // Import the HomePage component
 import ServicesPage from './pages/ServicesPage';
 import AboutPage from './pages/AboutPage';
 import ContactUsForm from './components/ContactUsForm';
+import Solutions from './pages/Solutions';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/services" element={<ServicesPage />} /> {/* Route for SearchPortal */}
                 <Route path='/about' element={<AboutPage/>} />
                 <Route path='/contact' element={<ContactUsForm/>} /> 
+                <Route path='/soltions' element={<Solutions/>}/>
             </Routes>
             <Footer />
         </Router>
